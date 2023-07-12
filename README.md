@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The MoviesApp ReactJS is a web application built using the React JavaScript library. It allows users to search for movies using the OMDb API and displays detailed information about the movies. The application utilizes various technologies such as Bootstrap, Postman, and React Hooks (specifically useEffect and useState) to provide a seamless user experience.
 
-## Available Scripts
+Installation
+To install and run the MoviesApp ReactJS, follow these steps:
 
-In the project directory, you can run:
+Clone the repository from GitHub:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+git clone https://github.com/KlimentinaIvanova/MoviesApp_ReactJS.git
+Navigate to the project directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+cd MoviesApp_ReactJS
+Install the dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
+Create a .env file in the root directory and add your OMDb API key. The file should have the following format:
+makefile
 
-### `npm run build`
+REACT_APP_OMDB_API_KEY=YOUR_API_KEY
+Start the application:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start
+The application should now be running on http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Configuration
+To configure the MoviesApp ReactJS, you need to set up the OMDb API key. The OMDb API key is required to fetch movie data from the OMDb API.
 
-### `npm run eject`
+Obtain an API key from the OMDb website (http://www.omdbapi.com/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a .env file in the root directory of the project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Add the following line to the .env file, replacing YOUR_API_KEY with your actual API key:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+REACT_APP_OMDB_API_KEY=YOUR_API_KEY
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Usage
 
-### Code Splitting
+Searching for Movies
+On the homepage, you will see a search bar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Enter the title of the movie you want to search for and click the "Search" button.
 
-### Analyzing the Bundle Size
+The application will make a request to the OMDb API with the provided title and display the search results.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Technologies Used
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+React
+React is a JavaScript library for building user interfaces. The MoviesApp ReactJS is built using React and leverages its component-based architecture and virtual DOM for efficient rendering and state management.
 
-### Advanced Configuration
+OMDb API
+The Open Movie Database (OMDb) API is a RESTful web service to obtain movie information. The MoviesApp ReactJS uses the OMDb API to search for movies and fetch detailed information about them.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Bootstrap
+Bootstrap is a popular CSS framework that provides a collection of reusable UI components. The MoviesApp ReactJS utilizes Bootstrap to create a responsive and visually appealing user interface.
 
-### Deployment
+Postman
+Postman is a collaboration platform for API development and testing. While not directly used in the application, Postman is mentioned as it can be helpful for testing and exploring the OMDb API endpoints during development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+React Hooks (useEffect and useState)
+React Hooks are functions that allow functional components to use state and other React features without writing a class. The MoviesApp ReactJS utilizes useEffect to perform side effects, such as fetching data from the OMDb API, and useState to manage state within functional components.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
